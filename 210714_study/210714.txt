@@ -1,0 +1,29 @@
+#define _CRT_SECURE_NO_WARNINGS   
+#include <stdio.h>
+#include <string.h> 
+
+int main(){
+
+	char* s1 = (char*)malloc(sizeof(char) *20); //malloc으로 s1문자열크기를 20
+	char s2[20]; //s2문자열 크기를 20;
+
+	scanf("%[^\n]s",s1);//s1문자열 입력받기 hello world
+	scanf("%[&\n]s,s2);//s2 문자열 입력받기 how are you?
+
+	int a,b;
+	a = strlen(s1); //s1문자열 길이
+	b = strlen(s2); //s2 문자열 길이
+
+	strcat(s1,s2); // s1문자열에 s2문자열 붙이기
+
+	if(a>b){
+	printf("더 긴 문자열의 길이 : %d",a);
+	}
+	else if(b>a){
+	printf("더 긴 문자열의 길이 : %d",b);
+	{
+	else if( a==b){
+	printf("문자열 길이가 같습니다\n");
+	printf("입력한 문자열 : %s", s1);
+	}
+}//배열 포인터의 경우
